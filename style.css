@@ -9,3 +9,8 @@ form button:hover {
     background: rgb(245, 195, 89);
     color: rgb(255, 255, 255);
 }
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
