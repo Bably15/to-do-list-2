@@ -1,0 +1,11 @@
+form button {
+    background: rgb(255, 255, 255);
+    color: rgb(245, 195, 89);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: rgb(245, 195, 89);
+    color: rgb(255, 255, 255);
+}
