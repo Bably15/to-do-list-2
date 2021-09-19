@@ -15,12 +15,12 @@ todoButton.addEventListener("click", (e) => {
     todoDiv.appendChild(newTodo);
     // check mark button
     const completedButton = document.createElement("button");
-    completedButton.innerText = "check";
+    completedButton.innerHTML = `<i class="fas fa-check-square"></i>`;
     completedButton.classList.add("complete-btn");
     todoDiv.appendChild(completedButton);
     // check trash button
     const trashButton = document.createElement("button");
-    trashButton.innerText = "undo";
+    trashButton.innerHTML = `<i class="fas fa-trash"></i>`;
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
     //append child
