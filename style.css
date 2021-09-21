@@ -25,3 +25,17 @@ form button:hover {
     background: rgb(230, 142, 126);
     color: white;
 }
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.todo {
+    background: cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
