@@ -26,5 +26,15 @@ todoButton.addEventListener("click", (addTodo) => {
 });
 
 todoList.addEventListener("click", (e) => {
-    console.log(e.target);
+    const item = e.target;
+
+    if (item.classList[0] === "trash-btn") {
+        const todo = item.parentElement;
+        todo.remove();
+    }
+
+    if (item.classList[0] === "complete-btn") {
+        const todo = item.parentElement;
+        todo.classList.toggle("completed");
+    }
 });
