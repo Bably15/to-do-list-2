@@ -32,10 +32,30 @@ form button:hover {
     padding: 30px;
 }
 .todo {
-    background: cornsilk;
+    background: rgb(255, 255, 255);
     display: flex;
-    justify-content: center;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+.todo li {
+    flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+    background: #ff6f47;
+    color: white;
+    border: none;
+}
+.complete-btn {
+    background: rgb(73, 204, 73);
+}
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+.fa-trash,
+.fa-check {
+    pointer-events: none;
 }

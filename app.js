@@ -8,7 +8,7 @@ todoButton.addEventListener("click", (addTodo) => {
     todoDiv.classList.add("todo");
 
     const newTodo = document.createElement("li");
-    newTodo.innerText = "hey";
+    newTodo.innerText = todoInput.value;
     newTodo.classList.add("todo-item");
     todoDiv.appendChild(newTodo);
     const completedButton = document.createElement("button");
@@ -22,4 +22,9 @@ todoButton.addEventListener("click", (addTodo) => {
     todoDiv.appendChild(trashButton);
     // append to list
     todoList.appendChild(todoDiv);
+    todoInput.value = "";
+});
+
+todoList.addEventListener("click", (e) => {
+    console.log(e.target);
 });
